@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Serif:opsz,wght@8..144,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto+Serif:opsz,wght@8..144,200;8..144,500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+nav {
+  background-color: white;
+  width: 100%;
+  height: 4rem;
+  overflow: hidden;
+  display: flex;
+}
+.nav-left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 2rem;
+  margin-left: 1rem;
+  font-family: 'Monoton', cursive;
+  word-spacing: 0.3rem;
+}
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 5rem;
+}
+.ul1 {
+  max-width: min-content;
+  display: flex;
+  gap: 1rem;
+}
+.ul1 > li {
+  display: inline-block;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background-image: url('glass.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-color: rgb(236, 236, 236);
+}
+aside {
+  position: absolute;
+  top: 45%;
+  margin-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+aside > * {
+  margin-top: 0.2rem;
+}
+.insta-icon {
+  background-image: url('instagram.png');
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+.face-icon {
+  background-image: url('facebook.png');
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+.tele-icon {
+  background-image: url('telegram.png');
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+ul a:hover {
+  color: lightslategrey;
+}
+
+p {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 100;
+}
+section > h1 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 900;
+}
+
+section {
+  width: 15rem;
+  position: absolute;
+  top: 45%;
+  left: 72%;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    width: 30rem;
+    position: absolute;
+    top: 8%;
+    left: 15%;
+  }
+  section > * {
+    font-size: 1.5rem;
+  }
+  .nav-left {
+    font-size: 1.7rem;
+  }
+  a > * {
+    font-size: 1.7rem;
+  }
+  .ul1 {
+    max-width: min-content;
+    display: flex;
+    gap: 1.2rem;
+  }
+  .nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
+  aside {
+    position: absolute;
+    top: 45%;
+    margin-left: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    transform: scale(3);
+  }
+  aside > * {
+    margin-top: 0.2rem;
+  }
+  .container > * {
+    font-size: 2rem;
+  }
+}
+
+.body-contact {
+  background-color: rgb(236, 236, 236);
+  position: relative;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.active {
+  color: rgb(188, 142, 142);
+}
